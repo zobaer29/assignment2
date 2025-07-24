@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #252432;
+}
+.first_half {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+.navber_item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navber_item li a {
+    color: #252432;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: 0.3s ease;
+}
+
+.navber_item li a:hover {
+    color: #E95A08;
+}
+
+.navber_logo img {
+    height: 50px;
+    object-fit: contain;
+}
+#Shop ,#AboutUs{
+    color: #8987A1;
+}
+.second_half{
+    display: flex;
+    padding: 50px 60px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #fff9f5;
+    gap: 40px;
+}
+.second_half img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+.orange {
+    color: #E95A08;
+}
+
+.gray_text {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 500px;
+    color: #5f5f5f;
+}
+.second_half h3 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.Headline {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 60px 0 20px;
+}
+
+.Headline + .gray_text {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 0 60px 60px;
+}
+
+.item div {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.item div:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.item_name {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.item_price {
+    font-size: 16px;
+    color: #E95A08;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn {
+    border: none;
+    background-color: #E95A08;
+    padding: 10px 20px;
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d44e07;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .first_half {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .navber_logo img {
+        height: 40px;
+    }
+
+    .navber_item {
+        gap: 12px;
+    }
+
+    .navber_item li a {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .second_half {
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .second_half h3 {
+        font-size: 28px;
+    }
+
+    .gray_text {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .item {
+        padding: 0 20px 40px;
+        grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+
+    }
+}
