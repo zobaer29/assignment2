@@ -253,6 +253,44 @@ body {
 
 }
 
+.subscribe-section {
+  text-align: center;
+  background: url('../assets/news-letter-bg.png') no-repeat center center;
+  background-size: cover;
+  padding: 80px 20px;
+  color: white;
+}
+
+
+.subscribe-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.subscribe-section form {
+  display: inline-flex;
+  max-width: 400px;
+  width: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.subscribe-section input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+}
+
+.subscribe-section button {
+  background-color: orange;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
 
 
 /* Responsive */
@@ -299,5 +337,29 @@ body {
     .trusted_badge{
         display: none;
     }
+
+    .subscribe-section {
+    padding: 50px 15px;
+  }
+
+  .subscribe-section h2 {
+    font-size: 24px;
+  }
+
+  .subscribe-section form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .subscribe-section input,
+  .subscribe-section button {
+    width: 100%;
+    
+  }
+
+  .subscribe-section button {
+    margin-top: 10px;
+  }
+
     
 }
