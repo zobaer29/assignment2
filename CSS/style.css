@@ -156,12 +156,9 @@ body {
 
     
 }
-.description img {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-}
+
 .description_text {
+    align-content: center;
     max-width: 500px;
     font-size: 16px;
     line-height: 1.7;
@@ -184,6 +181,18 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+.image_wrapper{
+    position: relative;
+}
+
+.trusted_badge{
+    position: absolute;
+    top: -180px;
+    right: -180px;
+    width: 286px ;
+    height: 286px;
+    
 }
 
 
@@ -228,5 +237,8 @@ body {
     width: 100%;
     padding: 20px;
     text-align: center;
+    }
+    .trusted_badge{
+        display: none;
     }
 }
