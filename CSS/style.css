@@ -413,6 +413,7 @@ footer {
   }
   .footer-links{
     flex-direction: column;
+    gap: 5px;
   }
   footer{
     flex-direction: column;
